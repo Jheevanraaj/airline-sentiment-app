@@ -8,14 +8,14 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 import pickle
 from wordcloud import WordCloud
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 
 # LOAD THE MODEL AND PREPROCESSING TOOLS
 
 # Load the trained LSTM model
-model = load_model('airline_sentiment_model.h5')
+model = load_model("airline_sentiment_model.keras")
 
 # Load the tokenizer
 with open('tokenizer.pkl', 'rb') as f:
