@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 import pickle
 from wordcloud import WordCloud
-from keras.models import load_model
+from keras.models import load_model  # DO NOT use tensorflow.keras here
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 
